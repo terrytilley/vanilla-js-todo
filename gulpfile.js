@@ -58,7 +58,7 @@ gulp.task('sass', function() {
 // Task: JS
 // --------------------------------------------------------------------
 gulp.task('js', function() {
-  return gulp.src(src.js)
+  return gulp.src([src.js, "!./assets/js/app.min.js"])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(jshint.reporter('default'))
     .pipe(uglify())
