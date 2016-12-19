@@ -47,7 +47,7 @@ ul.todo {
           position: absolute;
           top: 10px;
           left: 0;
-          background-color: $border-line-color;
+          background-color: $bg-color;
         }
 
         svg {
@@ -106,6 +106,22 @@ ul.todo {
             }
           }
         }
+      }
+    }
+
+    &:not(:empty) {
+      position: relative;
+      padding: 60px 0 0 0;
+
+      &:before {
+        content: '';
+        width: 150px;
+        height: 1px;
+        background-color: $divider-line-color;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        margin: 0 0 0 -75px;
       }
     }
   }
