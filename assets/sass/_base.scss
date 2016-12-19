@@ -1,7 +1,18 @@
 body {
+  padding: 80px 0 0 0;
   background-color: $bg-color;
 }
 
 body, input, button {
   font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+.noFill {
+  fill: none;
 }
